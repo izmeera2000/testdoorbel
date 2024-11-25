@@ -17,7 +17,7 @@ $pusher = new Pusher\Pusher(
 );
 
 // Data to be sent with the event (this can be anything you want to notify)
-$data = array('message' => 'Hello, this is a Pusher notification!');
+$data = array('message' => 'Someone at your door');
 
 // Send the event to a channel
 $result = $pusher->trigger('doorbell', 'bell', $data);
